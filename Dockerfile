@@ -35,7 +35,7 @@ ENTRYPOINT ["/home/jenkins/slave.sh"]
 ENV MAVEN_VERSION 3.5.2
 ENV MAVEN_HOME /opt/maven
 ENV SONAR_VERSION 2.4 
-ENV GRADLE_VERSION 2.11
+ENV GRADLE_VERSION 4.4
 
 RUN wget --no-verbose -O /tmp/apache-maven-${MAVEN_VERSION}.tar.gz http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz && \
     tar xzf /tmp/apache-maven-${MAVEN_VERSION}.tar.gz -C /opt/ && \
